@@ -1,5 +1,7 @@
 package chapter2;
 
+import entity.Apple;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -92,40 +94,6 @@ public class FilteringApples {
             }
         }
         return result;
-    }
-
-    public static class Apple {
-        private int weight;
-        private String color;
-
-        public Apple(int weight, String color) {
-            this.weight = weight;
-            this.color = color;
-        }
-
-        public int getWeight() {
-            return weight;
-        }
-
-        public void setWeight(int weight) {
-            this.weight = weight;
-        }
-
-        public String getColor() {
-            return color;
-        }
-
-        public void setColor(String color) {
-            this.color = color;
-        }
-
-        @Override
-        public String toString() {
-            return "Apple{" +
-                    "weight=" + weight +
-                    ", color='" + color + '\'' +
-                    '}';
-        }
     }
 
     interface ApplePredicate extends Predicate<Apple> {
