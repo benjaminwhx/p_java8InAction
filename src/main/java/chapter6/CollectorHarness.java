@@ -12,6 +12,7 @@ public class CollectorHarness {
     public static void main(String[] args) {
         System.out.println("Partitioning done in: " + execute(PartitionPrimeNumbers::partitionPrimes) + " msecs");
         System.out.println("Partitioning done in: " + execute(PartitionPrimeNumbers::partitionPrimesWithCustomCollectors) + " msecs" );
+        System.out.println("Partitioning done in: " + execute(PartitionPrimeNumbers::partitionPrimesWithInlineCollector) + " msecs" );
     }
 
     private static long execute(Consumer<Integer> primePartitioner) {
