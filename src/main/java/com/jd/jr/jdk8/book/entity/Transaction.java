@@ -1,0 +1,40 @@
+package com.jd.jr.jdk8.book.entity;
+
+/**
+ * User: 吴海旭
+ * Date: 2016-11-16
+ * Time: 下午1:09
+ * 贸易
+ */
+public class Transaction {
+    private final Trader trader;
+    private final int year;
+    private final int value;
+
+    public Transaction(Trader trader, int year, int value) {
+        this.trader = trader;
+        this.year = year;
+        this.value = value;
+    }
+
+    public Trader getTrader() {
+        return trader;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "trader=" + trader +
+                ", year=" + year +
+                ", value=" + value +
+                '}';
+    }
+}
